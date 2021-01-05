@@ -18,10 +18,15 @@ const NumberMask = () => {
   }
 
   const maskify = (string) => {
-    let sliced = ''
+    let slicedStart = ''
+    let slicedMiddle = ''
+    let slicedEnd = ''
+
     if (string.length >= 7) {
-      sliced = string.slice(1, string.length - 3)
-      setFinalNumber(`*${sliced}***`)
+      slicedStart = string.slice(0, 1)
+      slicedEnd = string.slice(string.length - 4, string.length)
+      slicedMiddle = string.slice(1, string.length - 4)
+      setFinalNumber(`${slicedStart} ${slicedMiddle.replace(/[0-9]/g, "*")} ${slicedEnd}`)
     } else {
       return setFinalNumber(string)
     }
