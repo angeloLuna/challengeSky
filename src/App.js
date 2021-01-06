@@ -1,4 +1,5 @@
 import NumberMask from './components/NumberMasking'
+import OrdinalNumbers from './components/OrdinalNumbers'
 import './App.css'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       </header>
       <body>
         <NumberMask />
+        <OrdinalNumbers />
       </body>
     </div>
   );
