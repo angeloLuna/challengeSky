@@ -19,14 +19,6 @@ const OrdinalNumbers = () => {
       value: '3',
       string: 'rd',
     },
-    {
-      value: '1',
-      string: 'st',
-    },
-    {
-      value: '1',
-      string: 'st',
-    },
   ]
 
   const handleInput = (e) => {

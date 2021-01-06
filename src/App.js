@@ -1,5 +1,6 @@
 import NumberMask from './components/NumberMasking'
 import OrdinalNumbers from './components/OrdinalNumbers'
+import PolishNotation from './components/PolishNotation'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <body>
         <NumberMask />
         <OrdinalNumbers />
+        <PolishNotation />
       </body>
     </div>
   );
